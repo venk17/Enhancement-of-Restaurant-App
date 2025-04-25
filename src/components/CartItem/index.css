@@ -1,0 +1,174 @@
+/* Cart Item Container */
+.cart-item-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+  position: relative;
+}
+
+/* Cart Item Image */
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* Cart Item Details */
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e293b;
+  margin: 0;
+}
+
+.dish-currency-price {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Quantity Control Buttons */
+.control-btn-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.control-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cbd5e1;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.cart-item-quantity {
+  margin: 0 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Remove Button */
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ef4444;
+  padding: 5px;
+  margin-left: 15px;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  transform: scale(1.1);
+}
+
+.text-danger {
+  color: #ef4444;
+}
+
+/* Utility Classes */
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cart-item-container {
+    padding: 12px 0;
+  }
+
+  .cart-item-image {
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+  }
+
+  .cart-item-name {
+    font-size: 0.95rem;
+  }
+
+  .dish-currency-price {
+    font-size: 0.85rem;
+  }
+
+  .control-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 0.9rem;
+  }
+
+  .remove-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-item-container {
+    padding: 10px 0;
+  }
+
+  .cart-item-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+
+  .cart-item-name {
+    font-size: 0.9rem;
+  }
+
+  .dish-currency-price {
+    font-size: 0.8rem;
+  }
+
+  .control-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+  }
+
+  .cart-item-quantity {
+    margin: 0 8px;
+    font-size: 0.85rem;
+  }
+
+  .remove-btn {
+    font-size: 0.9rem;
+    margin-left: 10px;
+  }
+}

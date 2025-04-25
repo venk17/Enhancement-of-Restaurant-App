@@ -1,0 +1,135 @@
+/* General Styles */
+.cart-page-container {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.cart-body-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* Empty View Styles */
+.empty-view-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.empty-description {
+  font-size: 1.2rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Cart Items Header */
+.cart-items-header {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 20px;
+}
+
+.cart-items-header h1 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.remove-all-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.remove-all-btn:hover {
+  background-color: #f1f5f9;
+}
+
+/* Cart Items List */
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cart-body-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .cart-items-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .remove-all-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-body-container {
+    padding: 10px;
+  }
+
+  .empty-view-image {
+    max-width: 250px;
+  }
+
+  .empty-description {
+    font-size: 1rem;
+  }
+
+  .cart-items-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cart-items-header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Utility Classes (from your className attributes) */
+.m-auto {
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.ps-0 {
+  padding-left: 0;
+}
+
+.text-primary {
+  color: #3b82f6;
+}
+
+/* If you need any additional styles for CartItem component, add them here */

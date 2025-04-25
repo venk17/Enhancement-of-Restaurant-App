@@ -1,0 +1,148 @@
+/* Home Background */
+.home-background {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Tab Container */
+.tab-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 15px 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 70px;
+  z-index: 90;
+}
+
+/* Hide scrollbar but keep functionality */
+.tab-container::-webkit-scrollbar {
+  display: none;
+}
+
+.each-tab-item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 5px;
+}
+
+.tab-category-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+}
+
+.active-tab-item .tab-category-button {
+  color: #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.each-tab-item:not(.active-tab-item) .tab-category-button:hover {
+  color: #1e40af;
+}
+
+/* Dishes List */
+.dishes-list-container {
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  color: #3b82f6;
+}
+
+/* Utility Classes */
+.m-0 {
+  margin: 0;
+}
+
+.ps-0 {
+  padding-left: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tab-container {
+    top: 60px;
+  }
+
+  .tab-category-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .dishes-list-container {
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-container {
+    top: 56px;
+    padding: 10px 0;
+  }
+
+  .tab-category-button {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .dishes-list-container {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .spinner-border {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+  .tab-category-button {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}

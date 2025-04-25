@@ -1,0 +1,206 @@
+/* Header Container */
+.nav-header {
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo-heading:hover {
+  color: #3b82f6;
+}
+
+/* My Orders Text */
+.my-orders-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.my-orders-text:hover {
+  color: #3b82f6;
+}
+
+/* Logout Button */
+.btn-outline-danger {
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+}
+
+/* Cart Icon */
+.cart-icon-link {
+  position: relative;
+  margin-left: 15px;
+}
+
+.cart-icon-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+
+.cart-icon:hover {
+  color: #3b82f6;
+  transform: scale(1.1);
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.cart-count {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Utility Classes */
+.p-4 {
+  padding: 1.5rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.me-2 {
+  margin-right: 0.5rem;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 576px) {
+  .d-sm-block {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-header {
+    padding: 1rem;
+  }
+
+  .logo-heading {
+    font-size: 1.3rem;
+  }
+
+  .my-orders-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-outline-danger {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  margin-left: 0.5rem;
+  }
+
+  .cart-icon {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-header {
+    padding: 0.75rem;
+  }
+
+  .logo-heading {
+    font-size: 1.2rem;
+  }
+
+  .btn-outline-danger {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+
+  .cart-count-badge {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cart-count {
+    font-size: 0.7rem;
+  }
+}

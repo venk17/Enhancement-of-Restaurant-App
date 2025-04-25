@@ -1,0 +1,100 @@
+/* Not Found Container */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8fafc;
+}
+
+/* Not Found Image */
+.not-found-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Heading */
+.not-found-container h1 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Home Button */
+.not-found-container button {
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.not-found-container button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .not-found-image {
+    max-width: 350px;
+    margin-bottom: 25px;
+  }
+
+  .not-found-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+
+  .not-found-container button {
+    padding: 11px 22px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .not-found-container {
+    padding: 15px;
+  }
+
+  .not-found-image {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .not-found-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .not-found-container button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+  .not-found-image {
+    max-width: 240px;
+  }
+
+  .not-found-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .not-found-container button {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+}
